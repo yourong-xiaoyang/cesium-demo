@@ -39,6 +39,7 @@ function copyPublicToOutput() {
 }
 
 export default defineConfig({
+  base: './',
   plugins: [vue(), cesium(), copyPublicToOutput()],
   resolve: {
     alias: {
